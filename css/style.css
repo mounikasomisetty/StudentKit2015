@@ -1,3 +1,5 @@
+
+
 /* -------------------------------- 
 
 Primary style
@@ -14,7 +16,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Lato";
-  color: #363558;
+  color: #000;
   background-color: #1c1726;
   background: url('../images/iiit.jpg') fixed center center;
 }
@@ -43,17 +45,18 @@ Header
 
 -------------------------------- */
 header {
+  margin-top: -30px;
   height: 170px;
   line-height: 170px;
   text-align: center;
-  background: rgba(255,255,255,0.75);
-  border-bottom: 2px #AAA solid;
+  background: rgba(255,255,255,0.55);
+  /*border-bottom: 2px #111 solid;*/
   /*background: url('../images/iiit.jpg') fixed center bottom;*/
 }
 header h1 {
   font-size: 2.8rem;
   color: #000;
-  background-color: rgba(255,255,255,0.75);
+ background: rgba(255,255,255,0.55);
 }
 
 header h2 {
@@ -65,14 +68,14 @@ header h2 {
 
 @media only screen and (min-width: 600px) {
   header {
-    height: 400px;
-    line-height: 400px;
+    height: 300px;
+    line-height: 300px;
   }
   header h1 {
     font-size: 5rem;
   }
   header h2 {
-  margin-top:-360px;
+  margin-top:-260px;
   font-size:18px;
   text-align:center;
 }
@@ -83,6 +86,9 @@ header h2 {
 Main content
 
 -------------------------------- */
+
+
+/*Other main stuff*/
 .cd-main {
   overflow-x: hidden;
 }
@@ -130,6 +136,11 @@ Main content
     transform: translateX(0);
   }
 }
+
+.cd-gallery
+{
+  margin-top: -30px;
+  }
 
 .cd-gallery::after {
   clear: both;
@@ -197,32 +208,41 @@ Main content
   vertical-align: middle;
 }
 .cd-item:nth-of-type(1) {
-  background-color: rgba(166, 216, 222,0.85);
+  background-color: rgba(44, 48, 44,0.85);
 }
 .cd-item:nth-of-type(2) {
-  background-color: #C1E4E8;
+  background-color: rgba(222,222,226,0.85);
 }
 .cd-item:nth-of-type(3) {
-  background-color: #D2ECEE;
+  background-color:  rgba(248,244,244,0.95);
 }
 .cd-item:nth-of-type(4) {
-  background-color: rgba(237, 247, 248,0.85);
+  background-color: rgba(66, 70, 66,1);
 }
 .cd-item:nth-of-type(5) {
-  background-color: rgba(255, 235, 204,0.85);
+  background-color: rgba(200,204,200,0.85);
 }
 .cd-item:nth-of-type(6) {
-  background-color: #FFD699;
+  background-color:  rgba(226,222,222,1);
 }
 .cd-item:nth-of-type(7) {
-  background-color: #FFC266;
+  background-color:  rgba(88, 92, 88,0.85);
 }
 .cd-item:nth-of-type(8) {
- background-color: rgba(255, 173, 51,0.85);
+ background-color:  rgba(110, 110, 114,0.85);
 }
 
 .cd-item:nth-of-type(9) {
- background-color: rgba(255, 153, 0,0.85);
+ background-color:   rgba(178,182,178,1);
+}
+.cd-item:nth-of-type(10) {
+ background-color: rgba(178, 178, 182,0.85);
+}
+.cd-item:nth-of-type(11) {
+ background-color:rgba(88, 92, 88,1);
+}
+.cd-item:nth-of-type(12) {
+ background-color: rgba(222, 222, 226,0.85);
 }
 .cd-item h2 {
   font-size: 2.2rem;
@@ -247,7 +267,7 @@ Main content
   .cd-item {
     width: 33.33%; /*This is also the place where shit went down used to be 50%*/
     float: left;
-    height: 520px;
+    height: 470px;
     -webkit-transition: -webkit-transform 0.5s 0.4s;
     -moz-transition: -moz-transform 0.5s 0.4s;
     transition: transform 0.5s 0.4s;
@@ -581,7 +601,7 @@ folding panel
   margin: 1em 0;
   /*font-family: "Vollkorn", serif;*/
   font-size: 1.8rem;
-  color: #196CA3;
+  color: #669900;
   -webkit-transition: -webkit-transform 0.2s 0.1s, opacity 0.2s 0.1s;
   -moz-transition: -moz-transform 0.2s 0.1s, opacity 0.2s 0.1s;
   transition: transform 0.2s 0.1s, opacity 0.2s 0.1s;
@@ -670,3 +690,4 @@ Javascript disabled
   -o-transform: translateY(0);
   transform: translateY(0);
 }
+
