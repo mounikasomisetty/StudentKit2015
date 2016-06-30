@@ -217,13 +217,13 @@ Main content
   background-color:  rgba(248,244,244,0.95);
 }
 .cd-item:nth-of-type(4) {
-  background-color: rgba(66, 70, 66,1);
+  background-color: rgba(66, 70, 66,0.9);
 }
 .cd-item:nth-of-type(5) {
   background-color: rgba(200,204,200,0.85);
 }
 .cd-item:nth-of-type(6) {
-  background-color:  rgba(226,222,222,1);
+  background-color:  rgba(226,222,222,0.9);
 }
 .cd-item:nth-of-type(7) {
   background-color:  rgba(88, 92, 88,0.85);
@@ -233,7 +233,7 @@ Main content
 }
 
 .cd-item:nth-of-type(9) {
- background-color:   rgba(178,182,178,1);
+ background-color:   rgba(178,182,178,0.95);
 }
 .cd-item:nth-of-type(10) {
  background-color: rgba(178, 178, 182,0.85);
