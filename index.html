@@ -171,7 +171,7 @@
         <div id="slider" class="sl-slider-wrapper">
 
 			<div class="sl-slider">
-			
+
 				<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 					<div class="sl-slide-inner">
 						<div class="bg-img bg-img-1"></div>
@@ -179,7 +179,7 @@
 						<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
 					</div>
 				</div>
-				
+
 				<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 					<div class="sl-slide-inner">
 						<div class="bg-img bg-img-2"></div>
@@ -187,7 +187,7 @@
 						<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
 					</div>
 				</div>
-				
+
 				<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
 					<div class="sl-slide-inner">
 						<div class="bg-img bg-img-3"></div>
@@ -195,7 +195,7 @@
 						<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
 					</div>
 				</div>
-				
+
 				<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
 					<div class="sl-slide-inner">
 						<div class="bg-img bg-img-4"></div>
@@ -203,7 +203,7 @@
 						<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
 					</div>
 				</div>
-				
+
 				<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
 					<div class="sl-slide-inner">
 						<div class="bg-img bg-img-5"></div>
@@ -228,6 +228,16 @@
 					<div>
 						<h2>Letter from the Chair - Students Life Committee</h2>
 						<p>A little introduction to the Kit</p>
+						<b>View More</b>
+					</div>
+				</a>
+			</li>
+
+			<li class="cd-item">
+				<a href="director.html">
+					<div>
+						<h2>Letter from the Director</h2>
+						<p></p>
 						<b>View More</b>
 					</div>
 				</a>
@@ -342,11 +352,11 @@
 	</main> <!-- .cd-main -->
 
 	<div class="cd-folding-panel">
-		
+
 		<div class="fold-left"></div> <!-- this is the left fold -->
-		
+
 		<div class="fold-right"></div> <!-- this is the right fold -->
-		
+
 		<div class="cd-fold-content">
 			<!-- content will be loaded using javascript -->
 		</div>
@@ -359,14 +369,14 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.gridrotator.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
-<script type="text/javascript">	
+<script type="text/javascript">
 	$(function() {
-	
+
 		$( '#ri-grid' ).gridrotator( {
 			rows		: 3,
 			columns		: 10,
 			animType	: 'fadeInOut',
-			animSpeed	: 4000,
+			animSpeed	: 3000,
 			interval	: 600,
 			step		: 1,
 			w320		: {
@@ -383,7 +393,7 @@
 			rows		: 2,
 			columns		: 10,
 			animType	: 'fadeInOut',
-			animSpeed	: 4000,
+			animSpeed	: 3000,
 			interval	: 600,
 			step		: 1,
 			w320		: {
@@ -396,14 +406,14 @@
 			},
 			onhover : true
 		} );
-	
+
 	});
 </script>
 <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 <script type="text/javascript" src="js/jquery.slitslider.js"></script>
-<script type="text/javascript">	
+<script type="text/javascript">
 	$(function() {
-	
+
 		var Page = (function() {
 
 			var $nav = $( '#nav-dots > span' ),
@@ -419,28 +429,28 @@
 				init = function() {
 
 					initEvents();
-					
+
 				},
 				initEvents = function() {
 
 					$nav.each( function( i ) {
-					
+
 						$( this ).on( 'click', function( event ) {
-							
+
 							var $dot = $( this );
-							
+
 							if( !slitslider.isActive() ) {
 
 								$nav.removeClass( 'nav-dot-current' );
 								$dot.addClass( 'nav-dot-current' );
-							
+
 							}
-							
+
 							slitslider.jump( i + 1 );
 							return false;
-						
+
 						} );
-						
+
 					} );
 
 				};
@@ -452,20 +462,20 @@
 		Page.init();
 
 		/**
-		 * Notes: 
-		 * 
+		 * Notes:
+		 *
 		 * example how to add items:
 		 */
 
 		/*
-		
+
 		var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-		
+
 		// call the plugin's add method
 		ss.add($items);
 
 		*/
-	
+
 	});
 </script>
 </body>
