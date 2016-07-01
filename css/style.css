@@ -214,12 +214,12 @@ Main content
   background-color: rgba(222,222,226,0.85);
 }
 .cd-item:nth-of-type(3) {
-  background-color:  rgba(248,244,244,0.95);
-}
-.cd-item:nth-of-type(4) {
-  background-color: rgba(66, 70, 66,0.9);
+  background-color:  rgba(178,182,178,0.95);
 }
 .cd-item:nth-of-type(5) {
+  background-color: rgba(66, 70, 66,0.9);
+}
+.cd-item:nth-of-type(4) {
   background-color: rgba(200,204,200,0.85);
 }
 .cd-item:nth-of-type(6) {
@@ -229,7 +229,7 @@ Main content
   background-color:  rgba(88, 92, 88,0.85);
 }
 .cd-item:nth-of-type(8) {
- background-color:  rgba(110, 110, 114,0.85);
+ background-color:  rgba(222,222,226,0.85);
 }
 
 .cd-item:nth-of-type(9) {
