@@ -1,0 +1,21 @@
+
+
+	ul.gallery li a.pic-1 {
+	z-index: 1;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+}
+ul.gallery li a.pic-2 {
+	z-index: 5;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+}
+ul.gallery li a.pic-3 {
+	z-index: 3;
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+}
+ul.gallery li a:hover {
+	z-index: 10;
+	-moz-box-shadow: 3px 5px 15px #333;
+}
