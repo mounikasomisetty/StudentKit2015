@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="DemoApp">
+  <head>
+    <meta charset="utf-8">
+    <title>IIIT Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="owl/assets/css/bootstrapTheme.css" rel="stylesheet">
+    <link href="owl/assets/css/custom.css" rel="stylesheet">
+
+    <!-- Owl Carousel Assets -->
+    <link href="owl/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- Prettify -->
+    <link href="owl/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="owl/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="owl/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="owl/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="owl/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body ng-controller="DemoCtrl">
+      <div id="top-nav" class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li><a href="index.html">StudentKit</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="demo">
+        <div class="container">
+          <div class="row">
+            <br/>
+            <br/>
+            <br/>
+            <div class="span12">
+              <div id="owl-example" class="owl-carousel">
+                <div class="item" ng-repeat="slide in slides" >
+                    <img class="lazyOwl" data-src=" {{ slide.img}}" alt="Gallery Image" style="max-height:640px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="owl/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="owl/owl-carousel/owl.carousel.min.js"></script>
+    <script src="owl/js/angular.min.js"></script>
+    <script src="owl/js/custom_slider.js"></script>
+
+    <!-- Frontpage Demo -->
+    <script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel({
+        autoPlay : true,
+        stopOnHover : true,
+        navigation : true,
+        navigationText : ["prev","next"],
+        rewindNav : true,
+        autoHeight: true,
+        lazyLoad : true,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        pagination:false,
+        paginationNumbers:true
+      });
+    });
+
+
+    $("body").data("page", "frontpage");
+
+    </script>
+    <script src="owl/assets/js/bootstrap-collapse.js"></script>
+    <script src="owl/assets/js/bootstrap-transition.js"></script>
+
+    <script src="owl/assets/js/google-code-prettify/prettify.js"></script>
+	  <script src="owl/assets/js/application.js"></script>
+  </body>
+</html>
